@@ -27,7 +27,7 @@ function draw() {
      ellipse(width/2, height/2, random(10)*i);
 
   }
-  a++;
+  a += 0.1;
   if (a > 100){
     a = 0;
   }
