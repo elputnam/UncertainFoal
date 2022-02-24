@@ -1,6 +1,7 @@
 var tileCount;
 var locx;
 var locy;
+let a = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -18,13 +19,17 @@ function draw() {
   // if (frameCount%2==0){
   grid();
   // }
-  fill(180, 100, random(100), 5);
+  fill(180, 100, random(100), random(a));
   // stroke(180, 100, 10);
   noStroke();
   for (let i = 0; i < 50; i++){
   // ellipse(mouseX, mouseY, random(10)*i);
      ellipse(width/2, height/2, random(10)*i);
 
+  }
+  a++;
+  if (a > 100){
+    a = 0;
   }
 }
 
@@ -61,7 +66,7 @@ function grid(){
 
 
     } else {
-      fill(random(10), 100, 100, random(10));
+      fill(random(10), 100, 100, random(30));
       }
     
       }
