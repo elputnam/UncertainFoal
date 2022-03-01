@@ -19,12 +19,17 @@ function draw() {
   // if (frameCount%2==0){
   grid();
   // }
-  fill(180, 100, random(100), random(a));
+  let coin = floor(random(2));
+  if (coin == 1){
+    fill(50, 100, random(100), random(a));
+  } else {
+  fill(200, 100, random(100), random(a));
+  }
   // stroke(180, 100, 10);
   noStroke();
-  for (let i = 0; i < 50; i++){
+  for (let i = 0; i < 100; i++){
   // ellipse(mouseX, mouseY, random(10)*i);
-     ellipse(width/2, height/2, random(10)*i);
+     ellipse(width/2, height/2, 10*i);
 
   }
   a += 0.1;
