@@ -77,4 +77,8 @@ function grid(){
       }
     }
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 // }
